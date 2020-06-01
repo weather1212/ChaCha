@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ChaCha</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>MemberRegisterServlet</servlet-name>
+  	<servlet-class>member.MemberRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberRegisterServlet</servlet-name>
+  	<url-pattern>/memberRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MemberRegisterCheckServlet</servlet-name>
+  	<servlet-class>member.MemberRegisterCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberRegisterCheckServlet</servlet-name>
+  	<url-pattern>/memberRegisterCheck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ChatSubmitServlet</servlet-name>
+  	<servlet-class>chat.ChatSubmitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChatSubmitServlet</servlet-name>
+  	<url-pattern>/chatSubmitServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ChatListServlet</servlet-name>
+  	<servlet-class>chat.ChatListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChatListServlet</servlet-name>
+  	<url-pattern>/chatListServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MemberLoginServlet</servlet-name>
+  	<servlet-class>member.MemberLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberLoginServlet</servlet-name>
+  	<url-pattern>/memberLogin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ChatUnreadServlet</servlet-name>
+  	<servlet-class>chat.ChatUnreadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChatUnreadServlet</servlet-name>
+  	<url-pattern>/chatUnread</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ChatBoxServlet</servlet-name>
+  	<servlet-class>chat.ChatBoxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChatBoxServlet</servlet-name>
+  	<url-pattern>/chatBox</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MemberUpdateServlet</servlet-name>
+  	<servlet-class>member.MemberUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberUpdateServlet</servlet-name>
+  	<url-pattern>/memberUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MemberProfileServlet</servlet-name>
+  	<servlet-class>member.MemberProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberProfileServlet</servlet-name>
+  	<url-pattern>/memberProfile</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  	<servlet-name>BoardWriteServlet</servlet-name>
+  	<servlet-class>board.BoardWriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardWriteServlet</servlet-name>
+  	<url-pattern>/boardWrite</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BoardUpdateServlet</servlet-name>
+  	<servlet-class>board.BoardUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardUpdateServlet</servlet-name>
+  	<url-pattern>/boardUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BoardDeleteServlet</servlet-name>
+  	<servlet-class>board.BoardDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardDeleteServlet</servlet-name>
+  	<url-pattern>/boardDelete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>BoardReplyServlet</servlet-name>
+  	<servlet-class>board.BoardReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardReplyServlet</servlet-name>
+  	<url-pattern>/boardReply</url-pattern>
+  </servlet-mapping>
+</web-app>
